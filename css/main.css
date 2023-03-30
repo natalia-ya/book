@@ -1,0 +1,50 @@
+:root {
+  --primary-text-color: #1b3764;
+  --secondary-text-color: #ffffff;
+  --accent-color: #ffca42;
+  --nav-text-color: #f6f8fc;
+  --primary-font: 'Inter', sans-serif;
+  --accent-font: 'Cardo', serif;
+}
+
+body {
+  color: var();
+  font-family: var(--primary-font);
+  font-weight: ;
+  font-size: ;
+  line-height: ;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1330px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
