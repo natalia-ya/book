@@ -11,50 +11,103 @@
       href="https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Header -->
 
-    <header>
-      <div class="container">
-        <svg>
-          <use></use>
-        </svg>
-        <ul class="social-media">
-          <li>
-            <a href=""
-              ><svg>
-                <use></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><svg>
-                <use></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><svg>
-                <use></use></svg
-            ></a>
-          </li>
-        </ul>
-        <nav>
-          <p>Home</p>
-          <p>About</p>
-          <p>Pages</p>
-          <p>Contact Us</p>
-        </nav>
-        <button>Order Today</button>
+    <header class="header">
+      <div class="container header-cantainer">
+        <div class="social-media-cover">
+          <svg class="logo header-logo">
+            <use href="./img/symbol-defs.svg#icon-logo"></use>
+          </svg>
+          <ul class="social-media list">
+            <li class="social-media__item social-media__item--white">
+              <a class="social-media__link" href="">
+                <svg class="social-media__icon">
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item social-media__item--white">
+              <a class="social-media__link" href="">
+                <svg class="social-media__icon">
+                  <use href="./img/symbol-defs.svg#icon-twit"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item social-media__item--white">
+              <a class="social-media__link" href="">
+                <svg class="social-media__icon">
+                  <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav-cover">
+          <ul class="main-nav list">
+            <li class="main-nav__item">
+              <a class="link" href="">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link" href="">About</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link" href="">Pages</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link" href="">Contact Us</a>
+            </li>
+          </ul>
+          <button class="header-btn button">Order Today</button>
+        </div>
       </div>
     </header>
 
     <!-- Hero -->
     <main>
       <section class="hero">
-        <div class="container"></div>
+        <div class="hero-cover container">
+          <div class="title-cover">
+            <p class="title-cover__welcome">Welcome to Pages!!!</p>
+            <h1 class="title-cover__title">Your Books From The Best Writer</h1>
+            <p class="title-cover__text">
+              We believe that reading books are essential to a healthy culture.
+            </p>
+            <p class="title-cover__text">They’re where authors can connect with readers.</p>
+
+            <div class="btn-cover">
+              <button class="title-cover__btn button">Order Today</button>
+              <a class="title-cover__link link" href="">Read Free Demo</a>
+            </div>
+
+            <ul class="title-cover__list list">
+              <li class="title-cover__item">Pages:<br /><span>250 pages</span></li>
+              <li class="title-cover__item">Length: <br /><span>10 Hours</span></li>
+              <li class="title-cover__item">Rating:<br /><span>4.5/5 (305 ratings)</span></li>
+            </ul>
+          </div>
+
+          <div class="main-img-cover">
+            <img src="./img/hero.jpg" alt="book" />
+          </div>
+        </div>
+      </section>
+      <!-- Books -->
+      <section class="books">
+        <div class="container">
+          <h2 class="books-title">The Author’s Book</h2>
+          <ul class="books-list">
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>
