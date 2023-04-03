@@ -65,7 +65,7 @@
               <a class="link" href="">Contact Us</a>
             </li>
           </ul>
-          <button class="header-btn button">Order Today</button>
+          <button class="header-btn button" data-modal-open>Order Today</button>
         </div>
       </div>
     </header>
@@ -232,6 +232,118 @@
           </div>
         </div>
       </section>
+
+      <!-- Benefits -->
+      <section class="benefits">
+        <div class="container">
+          <h2 class="benefits__title bottom-line">What Will You Learn?</h2>
+          <div class="benefits__cover">
+            <ul class="benefits__list list">
+              <li class="benefits__item">
+                <span class="benefits__numb">1</span>Use HDFS & Map Reduce for storing & analyzing
+                data at scale.
+              </li>
+              <li class="benefits__item">
+                <span class="benefits__numb">2</span>Consume streaming data using Spark Streaming,
+                Flink, and Storm.
+              </li>
+              <li class="benefits__item">
+                <span class="benefits__numb">3</span>Choose an appropriate data storage technology
+                for your application
+              </li>
+              <li class="benefits__item">
+                <span class="benefits__numb">4</span>Analyze non-relational data using HBase,
+                Cassandra, and MongoDB.
+              </li>
+            </ul>
+            <img src="./img/benefits.png" alt="girl is reading a book" class="benefits__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Chapters -->
+      <section class="vision">
+        <div class="container">
+          <h2 class="chapters__title bottom-line">Enhance Knowledge & Vision</h2>
+          <ul class="chapters__list list">
+            <li class="chapters__item">
+              <h3 class="chapters__name">Chapter-1 Get Started Intro</h3>
+              <p class="chapters__desc">
+                You can double your knowledge by reading this ever needed book that can last a
+                lifetime.
+              </p>
+              <ul class="chapters__elements list">
+                <li class="chapters__elem dot"><span>Pages :</span> 106 pages</li>
+                <li class="chapters__elem dot"><span>Length :</span>2 Hours</li>
+              </ul>
+            </li>
+            <li class="chapters__item">
+              <h3 class="chapters__name">Chapter-2 The Roman Culture</h3>
+              <p class="chapters__desc">
+                It will help to improve your life career with the perfect and needed knowledge about
+                your life.
+              </p>
+              <ul class="chapters__elements list">
+                <li class="chapters__elem dot"><span>Pages :</span>180 pages</li>
+                <li class="chapters__elem dot"><span>Length :</span>3 Hours</li>
+              </ul>
+            </li>
+            <li class="chapters__item">
+              <h3 class="chapters__name">Chapter-3 How They Servived</h3>
+              <p class="chapters__desc">
+                We wanted to create an easy, convenient way for you to get your books & support.
+              </p>
+              <ul class="chapters__elements list">
+                <li class="chapters__elem dot"><span>Pages :</span>250pages</li>
+                <li class="chapters__elem dot"><span>Length :</span>4 Hours</li>
+              </ul>
+            </li>
+            <li class="chapters__item">
+              <h3 class="chapters__name">Chapter-4 The End Of Romans</h3>
+              <p class="chapters__desc">
+                Promote your book via Pages shop to support your writing & reading career.
+              </p>
+              <ul class="chapters__elements list">
+                <li class="chapters__elem dot"><span>Pages :</span>175 pages</li>
+                <li class="chapters__elem dot"><span>Length :</span>3 Hours</li>
+              </ul>
+            </li>
+          </ul>
+          <button class="chapters__button button">Start a 15-Days Free Trail</button>
+          <p class="chapters__questions">Short description about each chapter</p>
+          <p class="chapters__contact"><a href="">Have any questions?</a>Contact us</p>
+        </div>
+      </section>
+
+      <!-- Readers -->
+      <section class="readers">
+        <div class="container">
+          <div class="readers__cover">
+            <div class="readers__review">
+              <h2 class="readers__title">Words From Our Readers</h2>
+              <p class="readers__opinion">
+                We believe that bookstores are essential to a healthy culture. They’re where authors
+                can connect with readers, where we discover new writers, where children get hooked
+                on the thrill of reading that can last a lifetime.
+              </p>
+              <p class="readers__rate">(4.8/5)</p>
+              <p class="readers__comment">Overall Customer Ratings</p>
+            </div>
+            <ul class="readers__list">
+              <li class="readers__item"></li>
+              <li class="readers__item"></li>
+              <li class="readers__item"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <div class="backdrop backdrop--hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close>Close</button>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
