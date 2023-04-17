@@ -83,7 +83,7 @@
             <p class="title-cover__text">They’re where authors can connect with readers.</p>
 
             <div class="btn-cover">
-              <button class="title-cover__btn button">Order Today</button>
+              <button class="title-cover__btn button" data-modal-open>Order Today</button>
               <a class="title-cover__link link" href="">Read Free Demo</a>
             </div>
 
@@ -514,13 +514,85 @@
               <li class="footer__item">Changelog</li>
             </ul>
           </div>
+          <div class="contacts">
+            <h3 class="contacts__title footer__list-title">Keep in Touch</h3>
+            <div class="contacts__address-cover">
+              <p class="contacts__address">Address :</p>
+              <a class="link" href="">24A Kingston St, Los Vegas NC 28202, USA.</a>
+            </div>
+
+            <p class="contacts__mail">Mail :<a class="link" href="">support@pages.com</a></p>
+            <p class="contacts__phone">Phone :<a class="link" href="">(+22) 123 - 4567 - 900</a></p>
+          </div>
         </div>
+        <p>Powered by Webflow</p>
       </div>
     </footer>
 
     <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
-        <button data-modal-close>Close</button>
+        <h2 class="modal-title">We will call you</h2>
+        <button class="close-modal" data-modal-close>
+          <svg>
+            <use href="./img/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="ordering-form">
+          <div class="form-field-cover">
+            <div class="form-field">
+              <input
+                type="text"
+                class="form-input"
+                name="first-name"
+                id="first-name"
+                placeholder=" "
+              />
+              <label for="first-name" class="form-label">First name</label>
+              <svg class="form-user-icon">
+                <use href="./img/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <input
+                type="text"
+                class="form-input"
+                name="last-name"
+                id="last-name"
+                placeholder=" "
+              />
+              <label for="last-name" class="form-label">Last name</label>
+              <svg class="form-user-icon">
+                <use href="./img/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field-cover">
+            <div class="form-field">
+              <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
+              <label for="mail" class="form-label">Email</label>
+              <svg class="form-user-icon">
+                <use href="./img/symbol-defs.svg#icon-envelop"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " />
+              <label for="tel" class="form-label">Phone</label>
+              <svg class="form-user-icon">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <label class="comment-label" for="comment">Comment</label>
+          <textarea
+            class="form-texarea"
+            name="comment"
+            id="comment"
+            placeholder="Type message.."
+          ></textarea>
+
+          <button class="modal-btn button" type="submit">Apply</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js" type="module"></script>
