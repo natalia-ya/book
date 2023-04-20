@@ -25,3 +25,22 @@
   line-height: 1.58;
   margin-bottom: 50px;
 }
+.subsc-form__input {
+  padding: 20px 40px;
+  width: 650px;
+  border: 1px solid var(--text-color);
+}
+
+.subsc-form__input::placeholder {
+  color: var(--text-color);
+  font-size: 18px;
+}
+.subsc-form__btn {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+  text-align: center;
+  letter-spacing: 0.18px;
+  padding: 14px 120px;
+  background-color: var(--primary-text-color);
+}
