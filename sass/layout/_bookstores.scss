@@ -1,0 +1,74 @@
+.bookstores {
+  padding-top: 110px;
+  padding-bottom: 130px;
+}
+.bookstore__title {
+  text-align: center;
+  position: relative;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 76px;
+}
+.bookstore__list {
+  display: flex;
+  justify-content: space-between;
+}
+.bookstore__item {
+  text-align: center;
+  max-width: 313px;
+}
+.bookstore__name {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 19px;
+}
+.bookstore__desc {
+  line-height: 1.5;
+}
+
+.bookstore__item::before {
+  display: block;
+  margin-bottom: 19px;
+}
+.bookstore__item--store1::before {
+  content: url(../img/store1.svg);
+}
+.bookstore__item--store2::before {
+  content: url(../img/store2.svg);
+}
+.bookstore__item--store3::before {
+  content: url(../img/store3.svg);
+}
+.bookstore__item--store4::before {
+  content: url(../img/store4.svg);
+}
+/* Get copy */
+.get-copy {
+  background-color: var(--primary-text-color);
+  padding: 70px 0;
+}
+.book-copy {
+  display: flex;
+  justify-content: space-between;
+}
+.book-copy__info {
+  padding-top: 75px;
+  max-width: 540px;
+}
+.book-copy__title {
+  position: relative;
+  font-size: 45px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+  margin-bottom: 27px;
+}
+.book-copy__title::after {
+  left: 0;
+}
+.book-copy__desc {
+  color: var(--text-color);
+  margin-bottom: 27px;
+}
+.book-copy__btn {
+  color: var(--secondary-text-color);
+}

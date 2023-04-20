@@ -1,0 +1,9 @@
+.dot::before {
+  content: '';
+  display: inline-block;
+  background: var(--accent-color);
+  border-radius: 100px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}

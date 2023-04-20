@@ -1,0 +1,74 @@
+.vision {
+  background-color: var(--bg-item-color);
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+.chapters__title {
+  text-align: center;
+  font-size: 42px;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 70px;
+}
+.chapters__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 65px;
+}
+.chapters__item {
+  max-width: 635px;
+  padding: 40px 70px 46px 40px;
+  background-color: var(--secondary-text-color);
+}
+
+.chapters__item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+.chapters__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 40px;
+}
+.chapters__name {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+.chapters__desc {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.chapters__elements {
+  display: flex;
+}
+.chapters__elem {
+  font-size: 17px;
+  line-height: 1.59;
+}
+.chapters__elem:not(:last-child) {
+  margin-right: 45px;
+}
+.chapters__elem > span {
+  font-family: var(--accent-font);
+  color: var(--primary-text-color);
+  font-size: 22px;
+  line-height: 1.4;
+  margin-right: 10px;
+}
+.chapters__button {
+  background-color: var(--accent-color);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 57px;
+}
+.chapters__questions {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.58;
+}
+.chapters__contact {
+  text-align: center;
+}
+.chapters__contact > a {
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 5px;
+}

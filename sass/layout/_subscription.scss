@@ -1,0 +1,27 @@
+.subscription {
+  padding: 120px 0;
+}
+.subscription__cover {
+  text-align: center;
+  padding: 100px 150px 115px;
+  background-color: var(--accent-color);
+}
+.subscription__title {
+  position: relative;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+.subscription__title::after {
+  background-color: var(--primary-text-color);
+}
+.subscription__text {
+  max-width: 550px;
+  margin: 0 auto;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 1.58;
+  margin-bottom: 50px;
+}
