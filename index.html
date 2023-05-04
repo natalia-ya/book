@@ -458,6 +458,7 @@
               name="subsc-email"
               id="subsc-email"
               placeholder="Your email"
+              required
             />
             <button type="submit" class="subsc-form__btn">Subscribe</button>
           </form>
@@ -556,6 +557,7 @@
                 name="first-name"
                 id="first-name"
                 placeholder=" "
+                required
               />
               <label for="first-name" class="form-label">First name</label>
               <svg class="form-user-icon">
@@ -569,6 +571,7 @@
                 name="last-name"
                 id="last-name"
                 placeholder=" "
+                required
               />
               <label for="last-name" class="form-label">Last name</label>
               <svg class="form-user-icon">
@@ -579,14 +582,21 @@
 
           <div class="form-field-cover">
             <div class="form-field">
-              <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
+              <input
+                type="email"
+                class="form-input"
+                name="mail"
+                id="mail"
+                placeholder=" "
+                required
+              />
               <label for="mail" class="form-label">Email</label>
               <svg class="form-user-icon">
                 <use href="./img/symbol-defs.svg#icon-envelop"></use>
               </svg>
             </div>
             <div class="form-field">
-              <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " />
+              <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " required />
               <label for="tel" class="form-label">Phone</label>
               <svg class="form-user-icon">
                 <use href="./img/symbol-defs.svg#icon-phone"></use>
@@ -599,6 +609,7 @@
             name="comment"
             id="comment"
             placeholder="Type message.."
+            maxlength="400"
           ></textarea>
 
           <button class="modal-btn button" type="submit">Apply</button>
