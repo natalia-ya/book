@@ -5,9 +5,15 @@
 body {
   font-family: var(--primary-font);
   font-weight: 400;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.5;
   color: var(--body-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1330px) {
+    font-size: 19px;
+  }
 }
 ul {
   padding: 0;
@@ -18,7 +24,10 @@ h3 {
   color: var(--primary-text-color);
 }
 h2 {
-  padding-bottom: 23px;
+  padding-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 23px;
+  }
 }
 
 h1,
@@ -33,7 +42,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  // max-width: 100%;
   height: auto;
 }
 .list {
